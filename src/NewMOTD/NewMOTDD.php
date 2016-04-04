@@ -18,11 +18,22 @@ class NewMOTDD extends PluginTask
 
     public function onRun($currentTick)
     {
-		$logo = array(" §7Hello!"," §7Welcome!"," §7Have a good time!"," §7We will be better!"," §7Love our server!"," §7QQgroup:249849836!");//Random value acquisition
-		$logo2 = array_rand($logo);
+      /*$turn3 = (new NewMOTD($turn));
+	if($turn3 == "true"){
+	$motd = true;
+	}else{
+	$max = false;
+	$online = false;
+	$logo = false;
+	}
+	$logo = new NewMOTD($turn2);*/
+        $logo = array(" xxxxx1"," xxxxx2"," xxxxx3");//Random value acquisition
+        $online = count($this->plugin->getServer()->getOnlinePlayers());
+        $max = $this->plugin->getServer()->getMaxPlayers();
+	$logo2 = array_rand($logo);
         $motd = $this->plugin->getServer()->getMotd();
         $motd = TextFormat::AQUA . $motd;
-        $motd .= $logo[$logo2];//Produce result 
+        $motd .= " >" . $online . "/" . $max . "< " . $logo[$logo2];//Produce result 
         $this->plugin->getServer()->getNetwork()->setName($motd);
     }
 }

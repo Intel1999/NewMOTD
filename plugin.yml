@@ -1,0 +1,7 @@
+name: NewMOTD
+main: NewMOTD
+version: 1.0
+api: [1.13.1]+
+load: STARTUP
+author: intel
+description: 仿FunCraft服务器motd后随机变换的语句。

@@ -1,4 +1,6 @@
-<span style="color:#FF0000">NewMOTD for PocketMine-PM</span>
+<h1>NewMOTD for PocketMine-PM</h1>
+<h2>---------------------------------</h2>
+<h2>注意事项/matters needing attention</h2>
 <h5> A plugin for PocketMine-MP</h5>
 <div><h5>This is an open source project</h5>
 <h5>Don't sell for some primary school students.</h5>

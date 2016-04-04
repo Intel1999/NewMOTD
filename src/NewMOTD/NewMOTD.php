@@ -12,7 +12,7 @@ class NewMOTD extends PluginBase
     {
 		$this->getlogger()->info(TextFormat::GREEN."Welcome to use the plugin,the plugin by Intel~");
 		$this->getlogger()->info(TextFormat::GREEN."version : 1.1");
-		$this->getlogger()->info(TextFormat::GREEN."NewMOTD loaded !");
+		$this->getlogger()->info(TextFormat::GREEN."NewMOTD loaded !");//
     $this->getServer()->getScheduler()->scheduleRepeatingTask(new NewMOTDD($this), 20);//20 seconds refresh
     }
 }
